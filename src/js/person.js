@@ -1,6 +1,10 @@
+import { timers } from "jquery";
+
 export default class Person {
-  constructor (age) {
+  constructor (age, lifeExpectancy) {
     this.age = age;
+    this.lifeExpectancy = lifeExpectancy;
+
   }
   ageToMercuryYears() {
     let mercuryConversion = .24;

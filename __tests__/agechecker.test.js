@@ -7,11 +7,9 @@ describe('Person', () => {
     person = new Person(12, 72);
   });
 
-  test("should create a person object with the person's age", () => {
+  test("should create a person object with the person's age and life expectancy", () => {
     expect(person.age).toEqual(12);
-  });
-  test("should create a person object with the person's life expectancy", () => {
-    expect(person.lifeExpectancy).toEqual(71);
+    expect(person.lifeExpectancy).toEqual(72);
   });
   test("should return the age of person in Mercury years,", () => {
     expect(person.ageToMercuryYears()).toEqual(2.88);
