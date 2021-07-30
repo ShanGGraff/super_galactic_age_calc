@@ -1,8 +1,6 @@
-## Template For Further Project README.mds
+# Super Galactic Age Calculator
 
-# Application Name
-
-#### Brief description of application:
+#### An application that takes a person's age in Earth years and converts that age depending on other planet's orbits around the sun. It also determines their average life expectancy on each planet depending on inputted life expectancy on Earth. If they have passed their life expectancy, the app will return how many years they have lived passed it.
 
 #### **By Shane Graff**
 
@@ -40,7 +38,7 @@
 
 ## Description <a id="description"></a>
 
-Describe application in detail. What does the application do? What things would you like users and other developers to know about the application.
+The Super Galactic Age Calculator takes two inputs from a user: _Earth Age_, and _Life Expectancy_ instantiates a Person object with both values. The application then returns the Person objects' age in "Mercury years", "Venus years", "Mars years", and "Jupiter years." The different planet years are determined by how long it takes for them to fully orbit the sun. The app also returns the _Life Expectancy_ for each planet from the converted planet years for each planet. If the age entered surpasses that of the life expectancy entered, the app will return the number of years the person has lived beyond their life expectancy. See below for setting up the build environment.
 
 ## Setup/Installation Requirements <a id="setup"></a>
 
@@ -64,13 +62,19 @@ Also add .DS_Store to the .gitignore file in the root directory.
 
 ## Specifications <a id="specs"></a>
 
-| Behavior | Input | Output |
-|:---:|:---:|:---:|
-| The program should handle... | When it receives... | It should return... |
-
 Describe: Person Object
-Test1: "Create a Person object with constructor for age of person"
-Expect(let person = new Person(12); person { age: 12})
+
+"Create a Person object with constructor for age of person"
+Expect(let person = new Person(12); Person { age: 12})
+
+Test1: "Convert the Earth age of a person to the age they would have in Mercury years"
+If the interger 12 is inputed, the method should return 2.88 as Mercury's orbit around the sun is .24 that of Earth's.
+
+Test2: "Convert the Earth age of a person to the age they would have in Venus years"
+If the interger 12 is inputed, the method should return 7.44 since Venus' orbit around the sun is .62 that of Earth's.
+
+Test3: "Convert the Earth age of a person to the age they would have in Mars years"
+If the interger 12 is inputed, the method should return 22.56 since Mars' orbit around the sun is 1.88 that of Earth's. 
 
 ## Known Bugs <a id="bugs"></a>
 * Known issues
