@@ -10,4 +10,8 @@ export default class Person {
     let venusConversion = .62;
     return this.age * Math.round(venusConversion * 100)/ 100;
   }
+  ageToMarsYears() {
+    let marsConversion = 1.88;
+    return this.age * Math.round(marsConversion * 100)/ 100;
+  }
 }
