@@ -4,11 +4,14 @@ describe('Person', () => {
   let person;
 
   beforeEach(() => {
-    person = new Person(12);
+    person = new Person(12, 72);
   });
 
   test("should create a person object with the person's age", () => {
     expect(person.age).toEqual(12);
+  });
+  test("should create a person object with the person's life expectancy", () => {
+    expect(person.lifeExpectancy).toEqual(71);
   });
   test("should return the age of person in Mercury years,", () => {
     expect(person.ageToMercuryYears()).toEqual(2.88);

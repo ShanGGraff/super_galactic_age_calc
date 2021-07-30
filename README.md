@@ -76,6 +76,9 @@ If the interger 12 is inputed, the method should return 7.44 since Venus' orbit 
 Test3: "Convert the Earth age of a person to the age they would have in Mars years"
 If the interger 12 is inputed, the method should return 22.56 since Mars' orbit around the sun is 1.88 that of Earth's. 
 
+Test4: "Convert the Earth age of a person to the age they would have in Jupiter years"
+If the interger 12 is inputed, the method should return 142.32 since Jupiter's orbit around the sun is 11.86 that of Earth's.
+
 ## Known Bugs <a id="bugs"></a>
 * Known issues
 
