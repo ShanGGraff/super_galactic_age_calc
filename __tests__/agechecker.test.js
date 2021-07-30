@@ -19,4 +19,7 @@ describe('Person', () => {
   test("should return the age of person in Mars years,", () => {
     expect(person.ageToMarsYears()).toEqual(22.56);
   });
+  test("should return the age of person in Jupiter years,", () => {
+    expect(person.ageToJupiterYears()).toEqual(142.32);
+  });
 });
