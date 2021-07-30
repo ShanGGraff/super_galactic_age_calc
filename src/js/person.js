@@ -14,4 +14,8 @@ export default class Person {
     let marsConversion = 1.88;
     return this.age * Math.round(marsConversion * 100)/ 100;
   }
+  ageToJupiterYears() {
+    let jupiterConversion = 11.86;
+    return this.age * Math.round(jupiterConversion * 100)/ 100;
+  }
 }
