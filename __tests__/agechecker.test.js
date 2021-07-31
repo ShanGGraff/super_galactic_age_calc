@@ -33,6 +33,6 @@ describe('Person', () => {
     expect(person.yearsLeftOnMars()).toEqual(31.92);
   });
   test("should return the amount of years left on Jupiter", () => {
-    expect(person.yearsLeftOnJupiter()).toEqual(31.92);
+    expect(person.yearsLeftOnJupiter()).toEqual(5.06);
   });
 });

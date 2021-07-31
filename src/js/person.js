@@ -40,4 +40,8 @@ export default class Person {
     let expectancy = this.marsNumberConverter(this.lifeExpectancy) - this.marsNumberConverter(this.age);
     return Math.floor(expectancy * 100)/ 100;
   }
+  yearsLeftOnJupiter() {
+    let expectancy = this.jupiterNumberConverter(this.lifeExpectancy) - this.jupiterNumberConverter(this.age);
+    return Math.floor(expectancy * 100)/ 100;
+  }
 }
