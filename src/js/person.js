@@ -33,7 +33,13 @@ export default class Person {
     let expectancy = this.mercuryNumberConverter(this.yearsLeft);
       if (expectancy === 0) {
         return "You are the same age as the life expectancy on this planet.";
+      } else if (expectancy < 0) {
+        let convertToPositive = Math.floor(expectancy * -1* 100)/ 100;
+        return `You have lived ${convertToPositive} year/s beyond life expectancy on this planet.`
+      } else {
+        return Math.floor(expectancy * 100)/ 100;
       }
+
     return Math.floor(expectancy * 100)/ 100;
   }
   yearsLeftOnVenus() {
