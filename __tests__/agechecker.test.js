@@ -4,36 +4,36 @@ describe('Person', () => {
   let person;
 
   beforeEach(() => {
-    person = new Person(71, 71);
+    person = new Person(20, 76);
   });
 
   test("should create a person object with the person's age and life expectancy", () => {
-    expect(person.age).toEqual(71);
-    expect(person.lifeExpectancy).toEqual(71);
-    expect(person.yearsLeft).toEqual(0);
+    expect(person.age).toEqual(20);
+    expect(person.lifeExpectancy).toEqual(76);
+    expect(person.yearsLeft).toEqual(56);
   });
   test("should return the age of person in Mercury years", () => {
-    expect(person.ageToMercuryYears()).toEqual(295.83);
+    expect(person.ageToMercuryYears()).toEqual(83.33);
   });
   test("should return the age of person in Venus years", () => {
-    expect(person.ageToVenusYears()).toEqual(114.52);
+    expect(person.ageToVenusYears()).toEqual(32.26);
   });
   test("should return the age of person in Mars years", () => {
-    expect(person.ageToMarsYears()).toEqual(37.77);
+    expect(person.ageToMarsYears()).toEqual(10.64);
   });
   test("should return the age of person in Jupiter years", () => {
-    expect(person.ageToJupiterYears()).toEqual(5.99);
+    expect(person.ageToJupiterYears()).toEqual(1.69);
   });
   test("should return the amount of years left on Mercury", () => {
-    expect(person.yearsLeftOnMercury()).toEqual("You are the same age as the life expectancy on this planet.");
+    expect(person.yearsLeftOnMercury()).toEqual(233.33);
   });
   test("should return the amount of years left on Venus", () => {
-    expect(person.yearsLeftOnVenus()).toEqual("You are the same age as the life expectancy on this planet.");
+    expect(person.yearsLeftOnVenus()).toEqual(90.32);
   });
   test("should return the amount of years left on Mars", () => {
-    expect(person.yearsLeftOnMars()).toEqual("You are the same age as the life expectancy on this planet.");
+    expect(person.yearsLeftOnMars()).toEqual(29.79);
   });
   test("should return the amount of years left on Jupiter", () => {
-    expect(person.yearsLeftOnJupiter()).toEqual("You are the same age as the life expectancy on this planet.");
+    expect(person.yearsLeftOnJupiter()).toEqual(4.72);
   });
 });
