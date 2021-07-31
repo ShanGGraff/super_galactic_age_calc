@@ -32,35 +32,45 @@ export default class Person {
   yearsLeftOnMercury() {
     let expectancy = this.mercuryNumberConverter(this.yearsLeft);
       if (expectancy === 0) {
-        return "You are the same age as the life expectancy on this planet.";
+          return "You are the same age as the life expectancy on this planet.";
       } else if (expectancy < 0) {
         let convertToPositive = Math.floor(expectancy * -1* 100)/ 100;
-        return `You have lived ${convertToPositive} year/s beyond life expectancy on this planet.`
+          return `You have lived ${convertToPositive} years beyond life expectancy on this planet.`
       } else {
-        return Math.floor(expectancy * 100)/ 100;
+          return Math.floor(expectancy * 100)/ 100;
       }
-
-    return Math.floor(expectancy * 100)/ 100;
   }
   yearsLeftOnVenus() {
     let expectancy = this.venusNumberConverter(this.yearsLeft);
     if (expectancy === 0) {
-      return "You are the same age as the life expectancy on this planet.";
+        return "You are the same age as the life expectancy on this planet.";
+    } else if (expectancy < 0) {
+      let convertToPositive = Math.floor(expectancy * -1* 100)/ 100;
+        return `You have lived ${convertToPositive} years beyond life expectancy on this planet.`
+    } else {
+        return Math.floor(expectancy * 100)/ 100;
     }
-    return Math.floor(expectancy * 100)/ 100;
   }
   yearsLeftOnMars() {
     let expectancy = this.marsNumberConverter(this.yearsLeft);
     if (expectancy === 0) {
-      return "You are the same age as the life expectancy on this planet.";
+        return "You are the same age as the life expectancy on this planet.";
+    } else if (expectancy < 0) {
+      let convertToPositive = Math.floor(expectancy * -1* 100)/ 100;
+        return `You have lived ${convertToPositive} years beyond life expectancy on this planet.`
+    } else {
+        return Math.floor(expectancy * 100)/ 100;
     }
-    return Math.floor(expectancy * 100)/ 100;
   }
   yearsLeftOnJupiter() {
     let expectancy = this.jupiterNumberConverter(this.yearsLeft);
     if (expectancy === 0) {
-      return "You are the same age as the life expectancy on this planet.";
+        return "You are the same age as the life expectancy on this planet.";
+    } else if (expectancy < 0) {
+      let convertToPositive = Math.floor(expectancy * -1* 100)/ 100;
+        return `You have lived ${convertToPositive} years beyond life expectancy on this planet.`
+    } else {
+        return Math.floor(expectancy * 100)/ 100;
     }
-    return Math.floor(expectancy * 100)/ 100;
   }
 }
