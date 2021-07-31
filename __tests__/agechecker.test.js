@@ -28,12 +28,12 @@ describe('Person', () => {
     expect(person.yearsLeftOnMercury()).toEqual(250.00);
   });
   test("should return the amount of years left on Venus", () => {
-    expect(person.yearsLeftOnVenus()).toEqual(96.78);
+    expect(person.yearsLeftOnVenus()).toEqual(96.77);
   });
   test("should return the amount of years left on Mars", () => {
-    expect(person.yearsLeftOnMars()).toEqual(31.92);
+    expect(person.yearsLeftOnMars()).toEqual(31.91);
   });
   test("should return the amount of years left on Jupiter", () => {
-    expect(person.yearsLeftOnJupiter()).toEqual(5.06);
+    expect(person.yearsLeftOnJupiter()).toEqual(5.05);
   });
 });
