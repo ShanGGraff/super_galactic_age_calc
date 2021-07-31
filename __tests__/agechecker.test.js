@@ -10,6 +10,7 @@ describe('Person', () => {
   test("should create a person object with the person's age and life expectancy", () => {
     expect(person.age).toEqual(12);
     expect(person.lifeExpectancy).toEqual(72);
+    expect(person.yearsLeft).toEqual(60);
   });
   test("should return the age of person in Mercury years", () => {
     expect(person.ageToMercuryYears()).toEqual(50.00);
