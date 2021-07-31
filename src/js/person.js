@@ -19,20 +19,20 @@ export default class Person {
   ageToMercuryYears() {
     return this.mercuryNumberConverter(this.age);
   }
-  // ageToVenusYears() {
-  //   return this.venusNumberConverter(this.age);
-  // }
-  // ageToMarsYears() {
-  //   return this.marsNumberConverter(this.age);
-  // }
-  // ageToJupiterYears() {
-  //   return this.jupiterNumberConverter(this.age);
-  // }
-  // lifeExpectancyOnMercury() {
-  //   let expectancy = this.mercuryNumberConverter(this.lifeExpectancy) - this.mercuryNumberConverter(this.age);
-  //   return Math.floor(expectancy * 100)/ 100;
-  // }
-  // lifeExpectancyOnVenus() {
+  ageToVenusYears() {
+    return this.venusNumberConverter(this.age);
+  }
+  ageToMarsYears() {
+    return this.marsNumberConverter(this.age);
+  }
+  ageToJupiterYears() {
+    return this.jupiterNumberConverter(this.age);
+  }
+  yearsLeftOnMercury() {
+    let expectancy = this.mercuryNumberConverter(this.lifeExpectancy) - this.mercuryNumberConverter(this.age);
+    return Math.floor(expectancy * 100)/ 100;
+  }
+  // yearsLeftOnVenus() {
   //   let expectancy = this.venusNumberConverter(this.lifeExpectancy) - this.venusNumberConverter(this.age);
   //   return Math.floor(expectancy * 100)/ 100;
   // }
