@@ -27,13 +27,13 @@ describe('Person', () => {
   test("should return the amount of years left on Mercury", () => {
     expect(person.yearsLeftOnMercury()).toEqual("You are the same age as the life expectancy on this planet.");
   });
-  // test("should return the amount of years left on Venus", () => {
-  //   expect(person.yearsLeftOnVenus()).toEqual(96.77);
-  // });
-  // test("should return the amount of years left on Mars", () => {
-  //   expect(person.yearsLeftOnMars()).toEqual(31.91);
-  // });
-  // test("should return the amount of years left on Jupiter", () => {
-  //   expect(person.yearsLeftOnJupiter()).toEqual(5.05);
-  // });
+  test("should return the amount of years left on Venus", () => {
+    expect(person.yearsLeftOnVenus()).toEqual("You are the same age as the life expectancy on this planet.");
+  });
+  test("should return the amount of years left on Mars", () => {
+    expect(person.yearsLeftOnMars()).toEqual("You are the same age as the life expectancy on this planet.");
+  });
+  test("should return the amount of years left on Jupiter", () => {
+    expect(person.yearsLeftOnJupiter()).toEqual("You are the same age as the life expectancy on this planet.");
+  });
 });
