@@ -23,13 +23,16 @@ describe('Person', () => {
   test("should return the age of person in Jupiter years", () => {
     expect(person.ageToJupiterYears()).toEqual(1.01);
   });
-  test("should return the life expectancy on Mercury", () => {
+  test("should return the amount of years left on Mercury", () => {
     expect(person.yearsLeftOnMercury()).toEqual(250.00);
   });
-  test("should return the life expectancy on Venus", () => {
+  test("should return the amount of years left on Venus", () => {
     expect(person.yearsLeftOnVenus()).toEqual(96.78);
   });
-  test("should return the life expectancy on Mars", () => {
+  test("should return the amount of years left on Mars", () => {
     expect(person.yearsLeftOnMars()).toEqual(31.92);
+  });
+  test("should return the amount of years left on Jupiter", () => {
+    expect(person.yearsLeftOnJupiter()).toEqual(31.92);
   });
 });
