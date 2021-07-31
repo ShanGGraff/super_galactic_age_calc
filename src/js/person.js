@@ -29,7 +29,7 @@ export default class Person {
     return this.jupiterNumberConverter(this.age);
   }
   lifeExpectancyOnMercury() {
-    let expectancy = this.lifeExpectancy - this.age;
-    return expectancy * Math.round(.24 * 100)/ 100;
+    let expectancy = this.mercuryNumberConverter(this.lifeExpectancy) - this.mercuryNumberConverter(this.age);
+    return Math.floor(expectancy * 100)/ 100;
   }
 }

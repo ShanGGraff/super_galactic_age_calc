@@ -24,6 +24,6 @@ describe('Person', () => {
     expect(person.ageToJupiterYears()).toEqual(142.32);
   });
   test("should return the life expectancy on Mercury", () => {
-    expect(person.lifeExpectancyOnMercury()).toEqual(14.4);
+    expect(person.lifeExpectancyOnMercury()).toEqual(14.40);
   });
 });
