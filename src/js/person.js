@@ -31,18 +31,21 @@ export default class Person {
   }
   yearsLeftOnMercury() {
     let expectancy = this.mercuryNumberConverter(this.yearsLeft);
+      if (expectancy === 0) {
+        return "You are the same age as the life expectancy on this planet.";
+      }
     return Math.floor(expectancy * 100)/ 100;
   }
-  yearsLeftOnVenus() {
-    let expectancy = this.venusNumberConverter(this.yearsLeft);
-    return Math.floor(expectancy * 100)/ 100;
-  }
-  yearsLeftOnMars() {
-    let expectancy = this.marsNumberConverter(this.yearsLeft);
-    return Math.floor(expectancy * 100)/ 100;
-  }
-  yearsLeftOnJupiter() {
-    let expectancy = this.jupiterNumberConverter(this.yearsLeft);
-    return Math.floor(expectancy * 100)/ 100;
-  }
+  // yearsLeftOnVenus() {
+  //   let expectancy = this.venusNumberConverter(this.yearsLeft);
+  //   return Math.floor(expectancy * 100)/ 100;
+  // }
+  // yearsLeftOnMars() {
+  //   let expectancy = this.marsNumberConverter(this.yearsLeft);
+  //   return Math.floor(expectancy * 100)/ 100;
+  // }
+  // yearsLeftOnJupiter() {
+  //   let expectancy = this.jupiterNumberConverter(this.yearsLeft);
+  //   return Math.floor(expectancy * 100)/ 100;
+  // }
 }
