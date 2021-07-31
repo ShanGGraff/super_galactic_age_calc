@@ -32,8 +32,12 @@ export default class Person {
     let expectancy = this.mercuryNumberConverter(this.lifeExpectancy) - this.mercuryNumberConverter(this.age);
     return Math.floor(expectancy * 100)/ 100;
   }
-  // yearsLeftOnVenus() {
-  //   let expectancy = this.venusNumberConverter(this.lifeExpectancy) - this.venusNumberConverter(this.age);
-  //   return Math.floor(expectancy * 100)/ 100;
-  // }
+  yearsLeftOnVenus() {
+    let expectancy = this.venusNumberConverter(this.lifeExpectancy) - this.venusNumberConverter(this.age);
+    return Math.floor(expectancy * 100)/ 100;
+  }
+  yearsLeftOnMars() {
+    let expectancy = this.marsNumberConverter(this.lifeExpectancy) - this.marsNumberConverter(this.age);
+    return Math.floor(expectancy * 100)/ 100;
+  }
 }

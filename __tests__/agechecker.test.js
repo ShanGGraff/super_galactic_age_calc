@@ -24,12 +24,12 @@ describe('Person', () => {
     expect(person.ageToJupiterYears()).toEqual(1.01);
   });
   test("should return the life expectancy on Mercury", () => {
-    expect(person.yearsLeftOnMercury()).toEqual(116.13);
+    expect(person.yearsLeftOnMercury()).toEqual(250.00);
   });
-  // test("should return the life expectancy on Venus", () => {
-  //   expect(person.lifeExpectancyOnVenus()).toEqual(37.20);
-  // });
-  // test("should return the life expectancy on Mars", () => {
-  //   expect(person.lifeExpectancyOnMars()).toEqual(37.20);
-  // });
+  test("should return the life expectancy on Venus", () => {
+    expect(person.yearsLeftOnVenus()).toEqual(96.78);
+  });
+  test("should return the life expectancy on Mars", () => {
+    expect(person.yearsLeftOnMars()).toEqual(31.92);
+  });
 });
