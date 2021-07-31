@@ -32,4 +32,8 @@ export default class Person {
     let expectancy = this.mercuryNumberConverter(this.lifeExpectancy) - this.mercuryNumberConverter(this.age);
     return Math.floor(expectancy * 100)/ 100;
   }
+  lifeExpectancyOnVenus() {
+    let expectancy = this.venusNumberConverter(this.lifeExpectancy) - this.venusNumberConverter(this.age);
+    return Math.floor(expectancy * 100)/ 100;
+  }
 }

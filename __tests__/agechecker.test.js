@@ -27,6 +27,6 @@ describe('Person', () => {
     expect(person.lifeExpectancyOnMercury()).toEqual(14.40);
   });
   test("should return the life expectancy on Venus", () => {
-    expect(person.lifeExpectancyOnVenus()).toEqual(37.2);
+    expect(person.lifeExpectancyOnVenus()).toEqual(37.20);
   });
 });
