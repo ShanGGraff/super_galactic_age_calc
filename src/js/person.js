@@ -1,25 +1,35 @@
-import { timers } from "jquery";
-
 export default class Person {
   constructor (age, lifeExpectancy) {
     this.age = age;
     this.lifeExpectancy = lifeExpectancy;
 
   }
+  mercuryNumberConverter(number){
+    return number * Math.round(.24 * 100)/ 100;
+  }
+  venusNumberConverter(number){
+    return number * Math.round(.62 * 100)/ 100;
+  }
+  marsNumberConverter(number) {
+    return number * Math.round(1.88 * 100)/ 100;
+  }
+  jupiterNumberConverter(number) {
+    return number * Math.round(11.86 * 100)/ 100;
+  }
   ageToMercuryYears() {
-    let mercuryConversion = .24;
-    return this.age * Math.round(mercuryConversion * 100)/ 100;
+    return this.mercuryNumberConverter(this.age);
   }
   ageToVenusYears() {
-    let venusConversion = .62;
-    return this.age * Math.round(venusConversion * 100)/ 100;
+    return this.venusNumberConverter(this.age);
   }
   ageToMarsYears() {
-    let marsConversion = 1.88;
-    return this.age * Math.round(marsConversion * 100)/ 100;
+    return this.marsNumberConverter(this.age);
   }
   ageToJupiterYears() {
-    let jupiterConversion = 11.86;
-    return this.age * Math.round(jupiterConversion * 100)/ 100;
+    return this.jupiterNumberConverter(this.age);
+  }
+  lifeExpectancyOnMercury() {
+    let expectancy = this.lifeExpectancy - this.age;
+    return expectancy * Math.round(.24 * 100)/ 100;
   }
 }
