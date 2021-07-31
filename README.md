@@ -64,20 +64,26 @@ Also add .DS_Store to the .gitignore file in the root directory.
 
 Describe: Person Object
 
-"Create a Person object with constructor for age of person"
-Expect(let person = new Person(12); Person { age: 12})
+"Create a Person object with constructor for age, life expectancy, and the difference betwee both"
+Expect(let person = new Person(20, 76); Person { age: 20, lifeExpectancy: 76, yearsLeft: 56 })
 
 Test1: "Convert the Earth age of a person to the age they would have in Mercury years"
-If the interger 12 is inputed, the method should return 2.88 as Mercury's orbit around the sun is .24 that of Earth's.
+If the interger **20** is inputed, the method should return **83.33** as Mercury's orbit around the sun is .24 that of Earth's.
 
 Test2: "Convert the Earth age of a person to the age they would have in Venus years"
-If the interger 12 is inputed, the method should return 7.44 since Venus' orbit around the sun is .62 that of Earth's.
+If the interger **20** is inputed, the method should return **32.26** since Venus' orbit around the sun is .62 that of Earth's.
 
 Test3: "Convert the Earth age of a person to the age they would have in Mars years"
-If the interger 12 is inputed, the method should return 22.56 since Mars' orbit around the sun is 1.88 that of Earth's. 
+If the interger **20** is inputed, the method should return **10.64** since Mars' orbit around the sun is 1.88 that of Earth's. 
 
 Test4: "Convert the Earth age of a person to the age they would have in Jupiter years"
-If the interger 12 is inputed, the method should return 142.32 since Jupiter's orbit around the sun is 11.86 that of Earth's.
+If the interger **20** is inputed, the method should return **01.69** since Jupiter's orbit around the sun is 11.86 that of Earth's.
+
+Test5-9: "Return the amount of years left on each planet by finding the difference between age and life expectancy"
+
+Expected behavior: If age is greater than life expectancy, return the difference between both as the amount of expected years left before reaching life expectancy for each planet. If age is equal to life expectancy, return that you have reached life expectancy for each plant. If age is less than life expectancy, return how many years you have lived passed life expectancy for each planet. 
+
+Example: if you are 20 and life expectancy is 76, you would be 83.33 in Mercury years with 233.33 years left until you reach life expectancy on Mercury.
 
 ## Known Bugs <a id="bugs"></a>
 * Known issues
