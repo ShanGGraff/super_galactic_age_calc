@@ -86,7 +86,7 @@ Expected behavior: If age is greater than life expectancy, return the difference
 Example: if you are 20 and life expectancy is 76, you would be 83.33 in Mercury years with 233.33 years left until you reach life expectancy on Mercury.
 
 ## Known Bugs <a id="bugs"></a>
-* Known issues
+* Need to add UI and exception handling for input.
 
 ## License
 * [MIT](https://choosealicense.com/licenses/mit/)
