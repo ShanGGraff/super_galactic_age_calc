@@ -50,4 +50,7 @@ describe('Person', () => {
   test("should return the amount of years left on Venus", () => {
     expect(person2.yearsLeftOnVenus()).toEqual("You are the same age as the life expectancy on this planet.");
   });
+  test("should return the amount of years left on Mars", () => {
+    expect(person2.yearsLeftOnMars()).toEqual("You are the same age as the life expectancy on this planet.");
+  });
 });
