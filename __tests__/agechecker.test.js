@@ -37,3 +37,14 @@ describe('Person', () => {
     expect(person.yearsLeftOnJupiter()).toEqual(4.72);
   });
 });
+
+describe('Person', () => {
+  let person2;
+
+  beforeEach(() => {
+    person2 = new Person(20, 20);
+  });
+  test("should return the amount of years left on Mercury", () => {
+    expect(person2.yearsLeftOnMercury()).toEqual("You are the same age as the life expectancy on this planet.");
+  });
+});
