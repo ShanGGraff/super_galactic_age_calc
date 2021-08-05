@@ -44,16 +44,31 @@ describe('Person', () => {
   beforeEach(() => {
     person2 = new Person(20, 20);
   });
-  test("should return the amount of years left on Mercury", () => {
+  test("should return the amount of years left on Mercury if age and life expectancy are the same.", () => {
     expect(person2.yearsLeftOnMercury()).toEqual("You are the same age as the life expectancy on this planet.");
   });
-  test("should return the amount of years left on Venus", () => {
+  test("should return the amount of years left on Venus if age and life expectancy are the same.", () => {
     expect(person2.yearsLeftOnVenus()).toEqual("You are the same age as the life expectancy on this planet.");
   });
-  test("should return the amount of years left on Mars", () => {
+  test("should return the amount of years left on Mars if age and life expectancy are the same.", () => {
     expect(person2.yearsLeftOnMars()).toEqual("You are the same age as the life expectancy on this planet.");
   });
-  test("should return the amount of years left on Jupiter", () => {
+  test("should return the amount of years left on Jupiter if age and life expectancy are the same.", () => {
     expect(person2.yearsLeftOnJupiter()).toEqual("You are the same age as the life expectancy on this planet.");
   });
 });
+
+describe('Person', () => {
+  let person3;
+
+  beforeEach(() => {
+    person3 = new Person(72, 71);
+  });
+  test("should return the amount of years lived past life expectancy on Mercury", () => {
+    expect(person3.yearsLeftOnMercury()).toEqual("You have lived 4.17 years beyond life expectancy on this planet.");
+  });
+  test("should return the amount of years lived past life expectancy on Venus", () => {
+    expect(person3.yearsLeftOnVenus()).toEqual("You have lived 1.61 years beyond life expectancy on this planet.");
+  });
+});
+
