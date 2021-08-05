@@ -73,5 +73,8 @@ describe('Person', () => {
   test("should return the amount of years lived past life expectancy on Mars", () => {
     expect(person3.yearsLeftOnMars()).toEqual("You have lived 0.53 years beyond life expectancy on this planet.");
   });
+  test("should return the amount of years lived past life expectancy on Jupiter", () => {
+    expect(person3.yearsLeftOnJupiter()).toEqual("You have lived 0.08 years beyond life expectancy on this planet.");
+  });
 });
 
